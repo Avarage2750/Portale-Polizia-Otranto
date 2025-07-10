@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Concorsi Interni - Portale Polizia Otranto</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 2rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #ddd;
+    border: 1px solid #003366;
+    border-radius: 8px;
+    padding: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #003366;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  .card h3 {
+    margin: 0 0 0.5rem 0;
+  }
+  .card p {
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  /* Esempio sfondi personalizzati */
+  .bg-nocs { background: #e1f5fe; }
+  .bg-uopi { background: #fff3e0; }
+  .bg-mobile { background: #e8f5e9; }
+  .bg-prevenzione { background: #f3e5f5; }
+  .bg-squadra { background: #ffebee; }
+
+  .bg-sisco { background: #ede7f6; }
+  .bg-digos { background: #fbe9e7; }
+  .bg-volanti { background: #e0f2f1; }
+  .bg-stradale { background: #f9fbe7; }
+  .bg-ferroviaria { background: #e8eaf6; }
+
+  .bg-marittima { background: #fffde7; }
+  .bg-cavallo { background: #f1f8e9; }
+  .bg-postale { background: #fff3e0; }
+  .bg-scientifica { background: #e3f2fd; }
+</style>
+</head>
+<body>
+
+  <h1>Reparti Operativi</h1>
+
+  <div class="grid-container">
+    <a href="link-nocs.html" class="card bg-nocs">
+      <h3>NOCS</h3>
+      <p>Unità antiterrorismo speciale.</p>
+    </a>
+    <a href="link-uopi.html" class="card bg-uopi">
+      <h3>UOPI</h3>
+      <p>Unità Operative di Pronto Intervento.</p>
+    </a>
+    <a href="link-mobile.html" class="card bg-mobile">
+      <h3>Reparto Mobile</h3>
+      <p>Gestione ordine pubblico su larga scala.</p>
+    </a>
+    <a href="link-prevenzione.html" class="card bg-prevenzione">
+      <h3>Reparto Prevenzione Crimine</h3>
+      <p>Prevenzione e pattugliamento urbano.</p>
+    </a>
+    <a href="link-squadra.html" class="card bg-squadra">
+      <h3>Squadra Mobile</h3>
+      <p>Indagini giudiziarie e criminali.</p>
+    </a>
+
+    <a href="link-sisco.html" class="card bg-sisco">
+      <h3>SISCO</h3>
+      <p>Supporto investigativo centrale.</p>
+    </a>
+    <a href="link-digos.html" class="card bg-digos">
+      <h3>DIGOS</h3>
+      <p>Indagini su terrorismo e sovversione.</p>
+    </a>
+    <a href="link-volanti.html" class="card bg-volanti">
+      <h3>Reparto Volanti</h3>
+      <p>Pattuglie territoriali d'emergenza.</p>
+    </a>
+    <a href="link-stradale.html" class="card bg-stradale">
+      <h3>Polizia Stradale</h3>
+      <p>Controllo stradale e sicurezza veicolare.</p>
+    </a>
+    <a href="link-ferroviaria.html" class="card bg-ferroviaria">
+      <h3>Polizia Ferroviaria</h3>
+      <p>Sicurezza su treni e stazioni.</p>
+    </a>
+
+    <a href="link-marittima.html" class="card bg-marittima">
+      <h3>Polizia Marittima</h3>
+      <p>Controlli su porti e imbarcazioni.</p>
+    </a>
+    <a href="link-cavallo.html" class="card bg-cavallo">
+      <h3>Reparto a Cavallo</h3>
+      <p>Pattugliamenti su territorio naturale.</p>
+    </a>
+    <a href="link-postale.html" class="card bg-postale">
+      <h3>Polizia Postale</h3>
+      <p>Reati informatici e cybercrime.</p>
+    </a>
+    <a href="link-scientifica.html" class="card bg-scientifica">
+      <h3>Polizia Scientifica</h3>
+      <p>Analisi forensi e scene del crimine.</p>
+    </a>
+  </div>
+
+</body>
+</html>
