@@ -12,6 +12,26 @@
     }
     main { padding: 2rem; max-width: 800px; margin: auto; }
     footer { background: #003366; color: white; padding: 1rem; text-align: center; margin-top: 3rem; }
+
+    /* Stile caselle */
+    .box-link {
+      background: #003366;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      cursor: pointer;
+      max-width: 300px;
+      margin: 1.5rem auto;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+    .box-link:hover {
+      background: #002244;
+    }
   </style>
 </head>
 <body>
@@ -20,18 +40,28 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="login.html">Login</a>
-      <a href="login.html">Concorsi Interni</a>  <!-- link al login -->
+      <a href="login.html">Concorsi Interni</a>
     </nav>
   </header>
 
   <main>
     <h2>Benvenuto al Portale della Polizia di Otranto</h2>
     <p>
-      Questo è il portale ufficiale per le comunicazioni interne, la gestione dei concorsi e le informazioni per tutto il personale.
+      Questo è il portale ufficiale per i concorsi e i concorsi interni del personale.
     </p>
     <p>
-      Accedi con il tuo account per partecipare ai concorsi o per consultare le news riservate.
+      Accedi con il tuo ID Agente per partecipare ai concorsi interni.
     </p>
+
+    <!-- Casella Concorso Pubblico -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfUegDdjQaCcYEuaMBqpfxsOQ0--6m5F-Y90wFBXplDSaajQ/viewform?usp=header" target="_blank" class="box-link">
+      Concorso Pubblico
+    </a>
+
+    <!-- Casella Concorsi Interni -->
+    <a href="login.html" class="box-link">
+      Concorsi Interni
+    </a>
   </main>
 
   <footer>
