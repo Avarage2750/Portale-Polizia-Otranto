@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Concorsi - Portale Polizia Otranto</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    .login-container {
+      background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px;
+    }
+    h2 { text-align: center; color: #003366; }
+    label { display: block; margin: 0.5rem 0 0.2rem; }
+    input[type="text"] {
+      width: 100%; padding: 0.5rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;
+    }
+    button {
+      width: 100%; padding: 0.7rem; background: #003366; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;
+    }
+    button:hover {
+      background: #002244;
+    }
+    #msg { color: red; margin-top: 1rem; display: none; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login Concorsi Interni</h2>
+    <form id="loginForm" onsubmit="return login(event)">
+      <label for="agentId">ID Agente</label>
+      <input type="text" id="agentId" name="agentId" required autofocus />
+
+      <button type="submit">Accedi</button>
+    </form>
+    <p id="msg"></p>
+  </div>
+
+  <script>
+    const validIds = ["AGENTEPDS-34278", "AGENTEPDS-87423", "AGENTEPDS-47013"];
+
+    function login(e) {
+      e.preventDefault();
+      const id = document.getElementById('agentId').value.trim().toUpperCase();
+
+      if (validIds.includes(id)) {
+        sessionStorage.setItem('agentId', id);
+        window.location.href = "concorso.html";
+      } else {
+        const msg = document.getElementById('msg');
+        msg.style.display = 'block';
+        msg.textContent = "ID agente non valido. Riprova.";
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
