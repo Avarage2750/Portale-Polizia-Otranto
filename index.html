@@ -66,31 +66,53 @@
       text-align: center;
     }
 
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+      color: #003366;
+    }
+
+    .box-link {
+      background: white;
+      border: 2px solid #003366;
+      border-radius: 8px;
+      max-width: 350px;
+      margin: 1rem auto;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .box-link:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .box-link img {
+      max-width: 100%;
+      border-radius: 8px 8px 0 0;
+      display: block;
+    }
+
+    .box-link span {
+      display: block;
+      padding: 1rem;
+      font-weight: bold;
+      color: #003366;
+    }
+
     footer {
       background: #003366;
       color: white;
       padding: 1rem;
       text-align: center;
-    }
-
-    .box-link {
-      background: #003366;
-      color: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.2rem;
-      cursor: pointer;
-      max-width: 300px;
-      margin: 1.5rem auto;
-      text-decoration: none;
-      display: block;
-      transition: background-color 0.3s ease;
-    }
-
-    .box-link:hover {
-      background: #002244;
     }
   </style>
 </head>
@@ -107,13 +129,21 @@
   </header>
 
   <main>
-    <h2>Benvenuto al Portale della Polizia di Otranto</h2>
-    <p>
-      Questo è il portale ufficiale della Polizia di Stato di Otranto.
-    </p>
-    <p>
-      Qui potrai consultare informazioni su chi siamo, la nostra storia e molto altro...
-    </p>
+    <h2>Benvenuto nel Portale Ufficiale della Polizia di Stato della Città di Otranto.</h2>
+    <p>Qui potrai trovare:</p>
+    <ul>
+      <li>Chi Siamo?</li>
+      <li>La nostra storia</li>
+      <li>Concorsi</li>
+      <li>e molto altro</li>
+    </ul>
+
+    <div class="section-title">Centro comunicativo</div>
+
+    <a class="box-link" href="https://discord.gg/eNDCwuCzn7" target="_blank">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrHDnKeM9PDw6bisCPBPuVP879DRLim5xMQ&s" alt="Centro Comunicativo Discord">
+      <span>Accedi al Centro Comunicativo</span>
+    </a>
   </main>
 
   <footer>
